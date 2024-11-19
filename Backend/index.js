@@ -60,6 +60,8 @@ app.post("/api/weather", async (req, res) => {
   }
 });
 
+module.exports = app;
+
 app.listen(PORT, () => {
   console.log(`Server rodando em: http://localhost:${PORT}`);
 });
