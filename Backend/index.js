@@ -4,7 +4,7 @@ import env from "dotenv";
 import axios from "axios";
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 env.config();
 
 app.use(express.json());
